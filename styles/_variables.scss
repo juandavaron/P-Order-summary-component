@@ -1,0 +1,20 @@
+// *** BREAKPOINTS ***
+/*375px / 16px = 23.5em*/
+$mobile: 23.5em;
+/*1440px / 16px = 90em*/
+$desktop: 90em;
+
+// *** COLORS ***
+  // Primary
+$pale-blue: hsl(225, 100%, 94%);
+$bright-blue: hsl(245, 75%, 52%);
+  // Neutral
+$very-pale-blue: hsl(225, 100%, 98%);
+$desaturated-blue: hsl(224, 23%, 55%);
+$dark-blue: hsl(223, 47%, 23%);
+
+// *** FONTS ***
+$font: 'Poppins', sans-serif;
+$weight-light: 500;
+$weight-normal: 700;
+$weight-bold: 900;

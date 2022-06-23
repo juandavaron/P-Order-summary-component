@@ -1,0 +1,25 @@
+{
+  "name": "order-summary-component",
+  "version": "1.0.0",
+  "description": "Frontend-mentor solution",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juandavaron/P-Order-sumary-component.git"
+  },
+  "keywords": [
+    "frontend",
+    "css",
+    "html",
+    "sass"
+  ],
+  "author": "Juan David Varón <juanvarong@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/juandavaron/P-Order-sumary-component/issues"
+  },
+  "homepage": "https://github.com/juandavaron/P-Order-sumary-component#readme"
+}

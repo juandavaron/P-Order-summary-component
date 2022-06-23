@@ -1,0 +1,160 @@
+// BASE RESET
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  font-family: $font;
+}
+
+body {
+  background-color: $pale-blue;
+  background-image: url(/images/pattern-background-desktop.svg);
+  background-size: cover;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+// |===  MAIN  ===|
+.main {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__container {
+    background-color: #fff;
+    margin: 0 1.75rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 8px 16px 2px hsla(224, 23%, 55%, 0.2);
+  }
+
+  &__img {
+    border-radius: 1.25rem 1.25rem 0 0;
+  }
+}
+
+// |===  HERO  ===|
+.hero {
+
+  &__data {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__title {
+    padding: .25rem 1rem;
+    font-weight: $weight-bold;
+    font-size: 1.25rem;
+  }
+
+  &__copy {
+    padding: 1rem 1rem;
+    color: $desaturated-blue;
+    text-align: center;
+    line-height: 1.75rem;
+    font-weight: $weight-light;
+  }
+}
+
+.plan {
+  &__data {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    margin: 0 1.5rem 1rem 1.5rem;
+    padding: .75rem;
+    border-radius: .75rem;
+    background-color: $very-pale-blue;
+    font-size: .8rem;
+    gap: .5rem;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  &__title {
+    font-weight: $weight-bold;
+  }
+
+  &__price {
+    font-weight: $weight-light;
+    color: $desaturated-blue;
+  }
+
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .2s;
+
+    &:hover {
+      color: lighten($bright-blue, 2.5%);
+    }
+  }
+}
+
+.order {
+  &__data {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__button {
+    &-active {
+      background-color: $bright-blue;
+      color: #fff;
+      padding: 1rem 1.25rem;
+      margin: .25rem 1.5rem;
+      border-radius: .75rem;
+      box-shadow: 0 8px 16px 4px hsla(245, 75%, 52%, 0.25);
+      font-weight: $weight-bold;
+      transition: .2s;
+
+      &:hover {
+        background-color: lighten($bright-blue, 2.5%);
+      }
+    }
+
+    &-cancel {
+      color: $desaturated-blue;
+      margin: 1.5rem;
+      font-weight: $weight-bold;
+      transition: .2s;
+
+      &:hover {
+        color: $dark-blue;
+      }
+    }
+  }
+}
+
+// |===  FOOTER  ===|
+.attribution {
+  margin: .5rem;
+  text-align: center;
+  font-size: .75rem;
+}
+
+.attribution a {
+  text-decoration: none;
+}
